@@ -1,7 +1,7 @@
 <h2 align="center">Source-Free UDA on Remote Sensing Data</h2>
 Unsupervised Domain Adaptation implementation for remote sensing dataset LoveDA where source data is unavailable
 
-Link to the LoveDA dataset [[`Dataset`](https://doi.org/10.5281/zenodo.5706578)]
+[[`Dataset`](https://doi.org/10.5281/zenodo.5706578)]
 
 ### Requirements:
 - `pytorch >= 1.7.0`
