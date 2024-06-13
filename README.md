@@ -9,31 +9,13 @@ Unsupervised Domain Adaptation implementation for remote sensing dataset LoveDA 
 - `pandas >= 1.1.5`
 
 ### Getting Started
-Category labels: background – 1, building – 2, road – 3,
-                 water – 4, barren – 5,forest – 6, agriculture – 7.
-                
-- `Download Loveda Dataset from the provided link and store test, train, val folders in a folder named LoveDA.`
-- 
+- Download the dataset and source model weights (checkpoints) from the provided link
+- Generate Pseudo label by running the file generate_plabel_loveda.py
+- Run train_loveda.py to train the target model on unlabeled target domain data
+- Run evaluate_loveda.py and compute_iou_loveda.py to evaluate on val set and compute miou metric for each class respectively
 
+### Reference:- 
+1. Wang, J., Zheng, Z., Ma, A., Lu, X., & Zhong, Y. (2021). LoveDA: A remote sensing land-cover dataset for domain adaptive semantic segmentation. arXiv preprint arXiv:2110.08733.
 
-Reference:- 
-    @inproceedings{NEURIPS DATASETS AND BENCHMARKS2021_4e732ced,
-         author = {Wang, Junjue and Zheng, Zhuo and Ma, Ailong and Lu, Xiaoyan and Zhong, Yanfei},
-         booktitle = {Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks},
-         editor = {J. Vanschoren and S. Yeung},
-         pages = {},
-         publisher = {Curran Associates, Inc.},
-         title = {LoveDA: A Remote Sensing Land-Cover Dataset for Domain Adaptive Semantic Segmentation},
-         url = {https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/4e732ced3463d06de0ca9a15b6153677-Paper-round2.pdf},
-         volume = {1},
-         year = {2021}
-    }
-    @dataset{junjue_wang_2021_5706578,
-        author={Junjue Wang and Zhuo Zheng and Ailong Ma and Xiaoyan Lu and Yanfei Zhong},
-        title={Love{DA}: A Remote Sensing Land-Cover Dataset for Domain Adaptive Semantic Segmentation},
-        month=oct,
-        year=2021,
-        publisher={Zenodo},
-        doi={10.5281/zenodo.5706578},
-        url={https://doi.org/10.5281/zenodo.5706578}
-    }
+2. Cao, Y., Zhang, H., Lu, X., Xiao, Z., Yang, K., & Wang, Y. (2024). Towards Source-free Domain Adaptive Semantic Segmentation via Importance-aware and Prototype-contrast Learning. IEEE Transactions on Intelligent Vehicles.
+
